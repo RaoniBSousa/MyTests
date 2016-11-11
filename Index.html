@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Verde Consultoria Ambiental" />
+	<meta name="keywords" content="Consultoria Ambiental, Projetos Ambientais, Estudos Ambientais, EIA/RIMA, desenvolvimento sustentável" />
+	<meta name="author" content="Verde Consultoria Ambiental">
+	<meta name="robots" content="index, follow">
+	<title>Verde - Consultoria Ambiental</title>
+	<link rel="stylesheet" href="Css/Estilo-Principal2.css">
+	<link rel="stylesheet" href="Css/Menu.css">
+	<link rel="stylesheet" href="Css/Parallaxes.css">
+	<link rel="stylesheet" href="Css/MediaQueries.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+	<link rel="shortcut icon" href="Img/Icone.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Css/W3.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="Js/javascrpit1.js"></script>
+	<script src="Js/jquery-3.1.0.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+	<div>
+		<script>
+			var $doc = $('html, body');
+			$('.scrollSuave1').click(function () {
+				$doc.animate({
+					scrollTop: $($.attr(this, 'href')).offset().top
+				}, 500);
+				return false;
+			});
+		</script>
+	</div>
+	<div id="topo"></div>
+	<div id="contback">&nbsp;</div>
+	<div class="contact">
+		<h6 id="cont"> <span class="glyphicon glyphicon-envelope"></span> vmcs.ambiental@gmail.com &nbsp;</h6>
+		<h6 id="cont1"> <span class="glyphicon glyphicon-phone-alt"></span> (93) 99216-3575</h6> </div>
+	<header id="header">
+		<nav id="inline" class="navbar navbar-inverse"> 
+		<img src="Img/finalNoTexture2.png" class="w3-container w3-center w3-animate-zoom" id="img1" alt="Projetos Ambientais">
+			<ul id="menu" class="w3-animate-zoom">
+				<li><a href="#cont" class="scrollSuave">Início</a></li>
+				<li><a href="#servicos" class="scrollSuave">Serviços</a></li>
+				<li><a href="#cont" class="scrollSuave">Projetos</a></li>
+				<li><a href="#empresa" class="scrollSuave">Empresa</a></li>
+				<li><a href="#contact" class="scrollSuave">Contato</a></li>
+			</ul>
+		</nav>
+		<script>
+			$(document).ready(function () {
+				$("#inline").mouseover(function () {
+					$("#menu").fadeIn(3000);
+				});
+			});
+		</script>
+		
+	</header>
+
+	
+		<nav id="inlinefix" class="navbar navbar-inverse container-fluid"> 
+			<div>
+				<ul id="menuTopFix" class="container-fluid nav navbar-nav w3-animate-fading" data-spy="affix" data-offset-top="150">
+					<img src="Img/finalNoTexture2.png" class="w3-container w3-center w3-animate-zoom" id="img2" alt="Projetos Ambientais">
+					<li><a href="#inline" class="scrollSuave">Início</a></li>
+					<li><a href="#servicos" class="scrollSuave">Serviços</a></li>
+					<li><a href="#empresa" class="scrollSuave">Empresa</a></li>
+					<li><a href="#contact" class="scrollSuave">Contato</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	<!-- ============= MENU - MOBILE ===========================================================-->
+	<span style="cursor:pointer" onclick="openNav()" class="menufull">&#9776;</span>
+	<div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content"> <a href="#inline" class="scrollSuave">Início</a>
+		  <a href="#">Projetos</a> 
+		 <a href="#servicos" class="scrollSuave">Serviços</a>
+		  <a href="#empresa" class="scrollSuave">Empresa</a> <a href="#contact" class="scrollSuave">Contato</a> </div>
+	</div>
+	
+  <div id="socials" class="socials">
+		<button type="button" id="butt" class="btn btn-info butt"><<</button>
+		<a href="https://www.facebook.com/VerdeProjetosAmbientais/" target="_blank"><img src="Img/Facebook.png" alt="Facebook Logo"></a>
+		<a href="https://www.linkedin.com/in/verde-projetos-ambientais-39bbb212b" target="_blank"><img src="Img/Linkedin.jpeg" alt="Linkedin Logo"></a>
+		<a href="https://plus.google.com/114120269373298431693" target="_blank"><img src="Img/GooglePlus.png" alt="Google Plus Logo"></a>
+		<a href="#cont" class="scrollSuave"><img src="Img/Whatsapp.png" alt="Whatsapp Logo"></a>
+	</div>
+	
+	
+	<!--====================CAROUSEL==============================================================================================-->
+	<div class="container nopadding">
+		<br>
+		<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active w3-animate-opacity"> <img src="Img/sitevitu1.jpg" alt="Chania">
+					<div class="carousel-caption textsli">
+						<h3><span>Soluções Inteligentes</span></h3>
+						<p><span>Consultoria Ambiental Valorizando seu Empreendimento em Harmonia com o Meio Ambiente</span></p>
+					</div>
+				</div>
+				<div class="item w3-animate-opacity"> <img src="Img/sitevitu2.jpg" alt="Chania">
+					<div class="carousel-caption textsli">
+						<h3><span>Profissionalismo e Competência</span></h3>
+						<p><span>Eficiencia na Gestão com Qualidade e Responsablidade Ambiental</span></p>
+					</div>
+				</div>
+				<div class="item w3-animate-opacity"> <img src="Img/sitevitu.jpg" alt="Flower">
+					<div class="carousel-caption textsli">
+						<h3><span>Empresa com Comprometimento</span></h3>
+						<p><span>Técnicos Capazes de Fornecer Consultoria Ambiental para os setores de Infra-Estrutura, Serviços e Comércios, Agronegócio, Órgãos Públicos e Sociedade Civil em Geral.</span><p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--CONTROLE DO SLIDESHOW ========================================================================================================== FIM -->
+	
+	
+	<!--=======================================================================================================================================
+    Serviços
+    ===========================================================================================================================================-->
+	<section class="conteudo" id="servicos">
+		<div id="servparallax"></div> <a href="#topo" class="anchor scrollSuave"><span class="glyphicon glyphicon-menu-up"></span></a>
+		<!--SCROLL SUAVE - ÂNCHORA -->
+		<script>
+			var $doc = $('html, body');
+			$('.scrollSuave').click(function () {
+				$doc.animate({
+					scrollTop: $($.attr(this, 'href')).offset().top
+				}, 500);
+				return false;
+			});
+			$(window).scroll(function () {
+				nScrollPosition = $(window).scrollTop();
+				if (nScrollPosition >= 1000) {
+					$(".anchor").css("display", "block");
+				}
+				else {
+					$(".anchor").css("display", "none");
+				}
+			});
+		</script>
+		<!--SCROLL SUAVE - ÂNCHORA ===== FIM -->
+		<div id="titleserv">
+		<br> <img src="Img/Servicos.png" alt="" class=" fa fa-spinner w3-spin servimg">
+		<h1 class="w3-container w3-center w3-animate-left">Quais Serviços Executamos?</h1>
+		</div>
+			
+		<div id="list-serv">
+			<div id="wrapper1" class="wrap">
+			<h4>ELABORAÇÃO DE:</h4>				
+			<ul class="col" id="col1">
+				<li>Estudo de Impacto de Vizinhança e Relatório de Impacto de Vizinhança – EIV/REIV;</li>
+				<li> Cadastro Ambiental Rural;</li>
+				<li>Estudos Hidrogeológicos;</li>
+				<li>Estudo de Impacto Ambiental/Relatório de Impacto Ambiental – EIA/RIMA;</li>
+				<li>Inventário de Fauna e Plano de Afugentamento e Resgate;</li>
+				<li>Inventário de Flora e Plano de Supressão;</li>
+				<li>Levantamentos Socioeconômicos;</li>
+				<li>Mapas Técnicos;</li>
+				<li>Plano de Atendimento a Emergência – PAE;</li>
+				<li>Plano de Controle Ambiental – PCA;</li>
+				<li>Plano de Emergência Individual – PEI;</li>
+				<li>Plano de Gerenciamento de Resíduos Sólidos – PGRS;</li>
+				<li>Plano de Gerenciamento de Resíduos Construção Civil – PGRCC;</li>
+				<li>Plano de Gerenciamento de Resíduos de Serviços de Saúde – PGRSS;</li>
+				<li>Plano de Recuperação de Áreas Degradadas – PRAD;</li>
+				<li>Plano de Remoção de Vegetação – PRV;</li>
+				<li>Projeto de Engenharia Ambiental – PEA;</li>
+				<li>Relatório Ambiental Simplificado – RAS;</li>
+				<li>Relatório Anual de Atividades Potencialmente Poluidoras e Utilizadoras de Recursos Ambientais – Lei nº 10;165/2000 (CTF/IBAMA);</li>
+				<li>Relatório de Controle Ambiental – RCA;</li>
+				<li>Relatório de Informação Ambiental Anual – RIAA.</li>
+			</ul>
+			 </div>			
+			 
+			<div id="wrapper2" class="wrap">
+				<h4>REQUERIMENTO PARA:</h4>
+			<ul class="col" id="col2">
+				<li>Obtenção de Licença de Atividade Rural – LAR junto aos Órgãos Ambientais;</li>
+				<li>Obtenção de Certidão de Uso e Ocupação do Solo e Declaração de Posse junto as Prefeituras;</li>
+				<li>Obtenção de Autorização para Supressão Vegetal – ASV;</li>
+				<li>Obtenção de Licença Prévia – LP, Licença de Instalação – LI e Licença de Operação – LO junto aos Órgãos Ambientais;</li>
+				</a>
+				<li>Obtenção de Outorga Prévia e Outorga de Uso de Recursos Hídricos junto aos Órgãos Ambientais.</li>
+			<ul>
+			</div>
+			<div>
+				
+				<ul>
+				<li>Palestras Ambientais</li>
+				<li>Responsabilidade Social e Ambiental</li>
+				<li>Política e Legislação Ambiental</li>
+				<li>Educação Ambiental como Elemento de Transformação</li>
+				<li>Licenciamento Ambiental e Avaliação de Impactos Ambientais</li>
+				<li>Reciclagem e Resíduos Sólidos</li>
+				<li>Desenvolvimento Sustentável</li>
+				<li>Mudanças Climáticas: Nossos desafios</li>
+				<li>Transversalidade e Meio Ambiente</li>
+				<li>Sustentabilidade Ambiental: Aspectos Conceituais </li>
+				<li>Globalização, Educação e Meio Ambiente</li>
+				</ul>
+			</div>
+				
+			</ul>
+			
+			<div id="wrapper3" class="wrap">
+				<h4>POSTOS DE COMBUSTÍVEIS:</h4>
+			<ul class="col" id="col3">
+				<li>Projeto de implantação de postos revendedores de combustíveis, postos flutuantes e TRR- Base de distribuição</li>
+				<li>Instalação de postos de combustível e postos de abastecimento</li>
+				<li>Licenciamento ambiental</li>
+				<li>Projeto de implantação de postos revendedores de combustíveis, postos flutuantes e TRR- Base de distribuição</li>
+				<li>Investigação de passivos ambientais</li>
+				<li>Plano de Atendimento a Emergências – PAE</li>
+				<li>Plano de Controle Ambiental – PCA</li>
+				<li>Implantação de poços de sondagem e monitoramento</li>
+				<li>Coleta de amostras (água; solo; efluentes) e interpretação dos dados analíticos</li>
+				<li>Caracterização de áreas contaminadas</li>
+				<li>Elaboração de estudos de impacto de vizinhança</li>
+				<li>Acompanhamento técnico nos órgãos ambientais</li>
+				<li>Registro junto a ANP, combustíveis e gás liquefeito de petróleo GLP</li>
+				<li>Projeto para implantação de Portos e licenciamento</li>
+				<li>Licenciamento junto ao Corpo de bombeiros e elaboração projeto de combate  a incêndio e pânico (sinalização, extintores e rede de hidrantes)</li>
+				<li>Licenciamento junto a Capitania dos Portos, GRPU- Gerência Regional do Patrimônio da União e ANTAQ</li>
+				<li>Treinamento para situações de emergência</li>
+			</ul>
+			</div>
+			
+			<div id="wrapper4" class="wrap">
+				<h4>OUTRAS ATIVIDADES:</h4>
+			<ul class="col" id="col4">
+				<li>Outorga para Captação e Lançamento de Recursos Hídricos subterrâneos e superficiais</li>
+				<li>Projeto para implantação de Portos e licenciamento</li>
+				<li>Projeto para implantação e licenciamento de:</li>
+				<li>- Cais/muro de arrimo ou contenção</li>
+				<li>- Cemitério</li>
+				<li>- Aterro sanitário</li>
+				<li>- Indústria de pesca</li>
+				<li>- Transporte de cargas e produtos perigosos </li>
+				<li>- Loteamento</li>
+				<li>- Reciclagem</li>
+				<li>- Aeródromos</li>
+				<li>- Supermercados </li>
+				<li>Projeto de captação e distribuição de água</li>
+				<li>Investigação de passivos ambientais em terreno</li>
+				<li>Licenciamento junto ao Corpo de bombeiros e elaboração projeto de combate a incêndio e pânico (sinalização, extintores e rede de hidrantes)</li>
+				<li>Licenciamento junto a Capitania dos Portos, GRPU- Gerência Regional do Patrimônio da União e ANTAQ</li>
+				<li>Gestão ambiental</li>
+				<li>Prática de educação ambiental</li>
+			</ul>
+			</div>
+				
+			
+		</div>
+	</section>
+	<!--=======================================================================================================================================
+    Empresa
+    ===========================================================================================================================================-->
+	<section>
+		<div class="conteudo" id="empresa">
+			<div id="descricao">
+				<div>
+					<br>
+					<br>
+					<h2 class="w3-container w3-center w3-animate-zoom"><span><img src="Img/Icone1.png"  alt="Ícone"></span>Sobre a Verde Ambiental</h2>
+					<br>
+					<br>
+					<div class="atemp">
+						<div id="empresa-inline">
+							<div class="descript"> <img src="Img/Missao1.png" alt="missão" class="misvisval">
+								<h3>Missão</h3>
+								<p>Garantir a excelência e a ética da qualidade dos serviços na área ambiental, valorizando sempre os recursos naturais disponiveis na natureza</p>
+							</div>
+							<div class="descript"> <img src="Img/Visao1.png" alt="visão" class="misvisval">
+								<h3>Visão</h3>
+								<p>Empresa de consultoria em projetos ambientais, visando a qualidade, responsabilidade e transparência.</p>
+							</div>
+							<div class="descript"> <img src="Img/Valores1.png" alt="valores" class="misvisval">
+								<h3>Valores</h3>
+								<p>Qualidade Ambiental</p>
+								<p>Ética</p>
+								<p>Trabalho em Equipe</p>
+								<p>Comprometimento</p>
+								<p>Credibilidade</p>
+								<p>Melhora Continua</p>
+								<p>Integridade</p>
+								<p>Sustentabilidade</p>
+								<p>Inovação</p>
+							</div>
+						</div>
+						<br>
+						<br>
+						<br> </div>
+					<div id="atuacao">
+						<div id="atuaparallax"></div>
+						<h2 class="w3-container w3-center w3-animate-zoom">Como trabalhamos</h2>
+						<div id="atuacaotexto">
+							<p> A Verde Projetos Ambientais, empresa de engenharia consultiva e ambiental, oferece com excelência e profissionalismo serviços, projetos e estudos ambientais para diversos segmentos do mercado.</p>
+							<p> A verde ambiental oferece assessoria para empreendedores realizando todas as avaliações e estudos necessários para os processos de licenciamento ambiental. Destacam-se os Estudos de Impacto Ambiental (EIA) e respectivos Relatórios de Impacto Ambiental (RIMA), Relatorio Ambiental Simplificado, Estudo de Viabilidade Ambiental, Plano Basico Ambiental, Relatorio de Controle Ambiental, Plano de Emergencia individual Plano de Recuperaçao Ambiental, entre outros.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="avatar">
+				<div id="avatparallax"></div>
+				<h3><i class="material-icons" id="icon">&#xe7fb;</i>Nossa Equipe<i class="material-icons" id="icon1">&#xe7fb;</i></h3>
+					<div id="equipe">
+						<div id="victor">
+							<a href="http://lattes.cnpq.br/1109765631897623" target="_blank"> 
+							<img src="Img/Vitu.PNG" alt="" class="colabor"> 
+							</a>
+							<a href="http://lattes.cnpq.br/1109765631897623" target="_blank">
+								<p>Victor Cortinhas</p>
+							</a>
+							<p>Engenheiro Ambiental</p>
+							<p>CREA-19198D/PA</p>
+						</div>
+						<div>
+							<a href="http://lattes.cnpq.br/4505086966715859" target="_blank"> 
+							<img src="Img/Simone1.jpg" alt="" class="colabor"> 
+							</a>
+							<a href="http://lattes.cnpq.br/4505086966715859" target="_blank">
+								<p>Simone Moreira</p>
+							</a>
+							<p>Engenheira Agrônoma</p>
+							<p>CREA: 19204D/PA</p>
+						</div>
+						<div>
+							<a href="http://lattes.cnpq.br/5687850408590300" target="_blank">
+							<img src="Img/seumanoel1.jpg" alt="" class="colabor">
+							</a>
+							<a href="http://lattes.cnpq.br/5687850408590300" target="_blank">
+								<p>Manoel Bentes Filho</p>
+							</a>
+							<p>Quimico</p>
+							<p>Mestre em BIologia Urbana</p>
+						</div>
+						<div>
+							<a href="http://lattes.cnpq.br/2314566719726593" target="_blank">
+								<img src="Img/donamirtes1.jpg" alt="" class="colabor">
+							</a>
+							<a href="http://lattes.cnpq.br/2314566719726593" target="_blank">
+								<p>Mirtes Cortinhas</p>
+							</a>
+							<p>Geógrafa</p>
+							<p>Mestre em Geociência </p>
+							<p>Doutora em Educação Ambiental</p>
+						</div>					
+						<div>
+							<img src="Img/Leidiane1.png" alt="" class="colabor">												
+							<p>Leidiane Sousa</p>
+							<p>Assistente de Marketing</p>						
+						</div>			
+					</div>				
+			</div>
+			<!--=======================================================================================================================================
+    Contato
+    =========================================================================================================================================-->
+			<div id="contact"></div>
+			<div id="empreparallax"></div>
+			<section id="agende">
+				<div id="agdparallax"></div>
+				<h2 id="agendh2" class="w3-container w3-center w3-animate-zoom">Entre em Contato</h2>
+				<div id="endereco-inline">
+					<div class="dados">
+						<h3><span class="glyphicon glyphicon-home"></span>Endereço</h3>
+						<adress>
+						<p>Travessa Paricá</p>
+						<p>Número: 60</p>
+						<p>Bairro: Floresta</p>
+						<p>Santarém/Pará</p>
+						</adress>
+					</div>
+					<div class="dados">
+						<h3><span class="glyphicon glyphicon-earphone"></span>Telefone</h3>
+						<p>(93) 99216-3575</p>
+					</div>
+					<div class="dados">
+						<h3><span class="glyphicon glyphicon-envelope"></span>E-mail</h3>
+						<p>vmcs.ambiental@gmail.com</p>
+					</div>
+				</div>
+			</section>
+			<!--=======================================================================================================================================
+    Contato
+    =========================================================================================================================================-->
+			<footer id="endereco-foot">
+				<div id="googlemap"></div>
+				<div id="endere-foot">
+					<adress>
+						<h3>Endereço</h3>
+						<div id="bordendere"></div>
+						<adress>
+						<p>Travessa Paricá</p>
+						<p>Número: 60</p>
+						<p>Bairro: Floresta</p>
+						<p>Santarém/Pará</p>
+						</adress>
+					</adress>
+				</div>
+				<div id="desenvolv">
+					<p>Verde Projetos Ambientais @ 2016 - Todos os Direitos Reservados</p>
+				</div>
+				<!--============================FUNÇÃO PARA CHAMAR GOOGLE MAPS =================================== -->
+				<script>
+					var myCenter = new google.maps.LatLng(-2.4533339, -54.7153694);
+
+					function initialize() {
+						var mapProp = {
+							center: myCenter
+							, zoom: 15
+							, mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+						var map = new google.maps.Map(document.getElementById("googlemap"), mapProp);
+						var marker = new google.maps.Marker({
+							position: myCenter
+						, });
+						marker.setMap(map);
+					}
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+				<!--=======================================FUNÇÃO PARA CHAMAR GOOGLE MAPS ===================== FIM --><a type="button" class="abut w3-animate-opacity" id="butsocial1" onclick="aparecer()"><span class="glyphicon glyphicon-menu-up"></span></a>
+				<div id="socialsbot" class=""> 
+				<a href="https://www.facebook.com/VerdeProjetosAmbientais/" target="_blank"><i class="fa fa-facebook-square"></i></a> 
+				<a href="https://plus.google.com/114120269373298431693" target="_blank"><i class="fa fa-google-plus-square"></i></a> 
+				<a href="https://www.linkedin.com/in/verde-projetos-ambientais-39bbb212b" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
+				</div>
+			</footer>
+		</div>
+	</section>
+	<div id="bottom"></div>
+</body>
+
+</html>
